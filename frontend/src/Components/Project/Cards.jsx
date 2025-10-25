@@ -8,7 +8,7 @@ const Cards = () => {
 
   const fetchProjectData = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/getProject');
+      const response = await axios.get('https://employee-management-system-1nhc.onrender.com/api/getProject');
       setProjectInfo(response.data);
       console.log("the designation:",designation)
     } catch (error) {
@@ -18,7 +18,7 @@ const Cards = () => {
 
   const handleCompleted = async (projectId, status) => {
     try {
-      await axios.put(`http://localhost:8080/api/updateProject/${projectId}`, status);
+      await axios.put(`https://employee-management-system-1nhc.onrender.com/api/updateProject/${projectId}`, status);
       await fetchProjectData(); 
     } catch (error) {
       console.log("Error updating project:", error);
