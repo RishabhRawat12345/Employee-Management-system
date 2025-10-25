@@ -12,7 +12,7 @@ const Chats = () => {
   useEffect(() => {
     const fetchMessages = async () => {
       try {
-        const res = await axios.get('http://localhost:3001/api/messagesget');
+        const res = await axios.get('https://employee-management-system-1nhc.onrender.com/api/messagesget');
         setMessages(res.data);
       } catch (err) {
         console.error("Error fetching messages:", err);
