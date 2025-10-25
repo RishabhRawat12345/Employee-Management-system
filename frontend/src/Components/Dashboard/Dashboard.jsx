@@ -10,7 +10,7 @@ const Dashboard = () => {
 
   const fetchEmployeeTask = async () => {
     try {
-      const res = await axios.get('http://localhost:8080/api/gettasks');
+      const res = await axios.get('https://employee-management-system-1nhc.onrender.com/api/gettasks');
 
       if (res && res.data) {
         const tasks = res.data;
