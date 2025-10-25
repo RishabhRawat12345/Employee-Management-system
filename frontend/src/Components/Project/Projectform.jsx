@@ -26,7 +26,7 @@ const ProjectForm = () => {
   const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    const res = await axios.post('http://localhost:8080/api/Addproject', {
+    const res = await axios.post('https://employee-management-system-1nhc.onrender.com/api/Addproject', {
       ProjectName: formData.taskName,
       DateComp: formData.dueDate,
       categories: formData.categories, 
