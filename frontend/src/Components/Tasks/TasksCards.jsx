@@ -7,7 +7,7 @@ const TasksCards = () => {
   const [tasks, setTasks] = useState([]);
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/gettasks');
+      const response = await axios.get('https://employee-management-system-1nhc.onrender.com/api/gettasks');
       setTasks(response.data || []);
       console.log("the desgination of the user",designation);
     } catch (error) {
