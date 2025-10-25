@@ -11,7 +11,7 @@ export const DesignationProvider = ({ children }) => {
     console.log("👉 Context token:", token); 
 
     if (token) {
-      axios.get('http://localhost:8080/api/logindata', {
+      axios.get('https://employee-management-system-1nhc.onrender.com/api/logindata', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
