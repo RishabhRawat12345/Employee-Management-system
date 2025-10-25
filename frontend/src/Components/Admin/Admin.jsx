@@ -34,7 +34,7 @@ const Admin = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:8080/api/tasks", formData, {
+      const response = await axios.post("https://employee-management-system-1nhc.onrender.com/api/tasks", formData, {
         headers: {
           "Content-Type": "application/json",
         },
